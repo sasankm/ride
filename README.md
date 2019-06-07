@@ -1,3 +1,4 @@
+
 ## Problem
 Create a simple web-app to display a map with all state parks displayed as pins on the map. Pins on map should be clickable. On clicking a pin, info details should be displayed about the park like name, timings, address, etc. Use react and feel free to design your UX design. Submit your project using GitHub.
 
@@ -16,3 +17,6 @@ Good to have: Search functionality
 3. yarn install.
 4. yarn start.
   (If you get an error liks this 'Error: getaddrinfo ENOTFOUND x86_64-apple-darwin13.4.0' please type "unset HOST" and then step 4.)
+
+
+
