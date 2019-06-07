@@ -27,7 +27,7 @@ const styles = theme => ({
 class App extends Component{
 
   render(){
-    const MAP_KEY = "AIzaSyAsFjAiFIb2gim_PtEGJ1Td4sALoh6QFbs";
+     const key = process.env.REACT_APP_MAP_API_KEY;
     const { classes } = this.props;
     return(
       <div>
@@ -36,7 +36,7 @@ class App extends Component{
           <Paper className={classes.root} elevation={2}>
           <ReactDependentScript 
                   loadingComponent={<div>jQuery is loading...</div>}
-                  scripts={[`http://maps.googleapis.com/maps/api/js?key=${MAP_KEY}&libraries=geometry,places,visualization`]}
+                  scripts={[`http://maps.googleapis.com/maps/api/js?key=${key}&libraries=geometry,places,visualization`]}
                   >
               <GoogleMaps />
             </ReactDependentScript>
